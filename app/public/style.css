@@ -1,0 +1,13 @@
+body {
+    background-image: url("../images/characters.jpg");
+    background-size: cover;
+    image-rendering: crisp-edges;
+    
+};
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+};
