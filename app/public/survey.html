@@ -1,91 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Credit: http://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap -->
-  <title>Bootstrap Centered Jumbotron</title>
-  <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-  <link type="text/css" rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css" />
-  <style type="text/css">
-    html, body {
-      height: 100%;
-    }
-    .container{
-      width: 1025px;
-    }
-    .vertical-center {
-      height: 100%;
-      width: 100%;
-      text-align: center;  /* align the inline(-block) elements horizontally */
-      font: 0/0 a;         /* remove the gap between inline(-block) elements */
-    }
-    .vertical-center:before {    /* create a full-height inline block pseudo=element */
-      content: ' ';
-      display: inline-block;
-      vertical-align: middle;  /* vertical alignment of the inline element */
-      height: 100%;
-    }
-    .vertical-center > .container {
-      max-width: 100%;
-      background-color: gold;
-      display: inline-block;
-      vertical-align: middle;  /* vertical alignment of the inline element */
-      font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;        /* <-- reset the font property */
-    }
-    @media (max-width: 768px) {
-      .vertical-center:before {
-        /* height: auto; */
-        display: none;
-      }
-    }
-  </style>
+    <!-- chosen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <style>
+        body {
+            background-image: url("http://localhost:8080/app/images/characters.jpg");
+            background-size: cover;
+            image-rendering: crisp-edges;
+            
+        };
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        };
+
+        a:link {
+            color: rgb(247, 144, 144);
+            background-color: white;
+
+        };
+
+    </style>
 
 </head>
 <body>
+   <div class="container" style="background-color: #e9e5e5ce">
+      <h2>Survey Questions</h2>
+      <h5>Below are 10 movies from the Marvel Cinematic universe. Rate each movie you have seen on a scale of 1-5. </h5>
+      <h5>If you have not seen the movie give it a 0</h5>
+      <hr>
+      <h3><strong>About You</strong></h3>
+      <h4>Name (Required)</h4>
+      <input type="text" id="name" class="form-control" required>
+      <h4>Link to Photo Image (Required)</h4>
+      <input type="text" id="photo" class="form-control" required>
+      <h4>Favorite Marvel Character (Required)</h4>
+      <input type="text" id="favorite" class="form-control" required>
 
-  <div class="jumbotron vertical-center">
-    <div class="container text-center">
+      <hr>
 
-      <h1>The easiest and powerful way</h1>
-
-      <div class="row">
-
-        <div class="col-md-7">
-          <div class="top-bg"></div>
+      <h3><strong>Iron Man</strong></h3>
+      <h4></h4>
+      <select class="chosen-select" id="m1" style="display: none;">
+        <option value></option>
+        <option value="0">0</option>
+        <option value="1">1 (dislike)</option>
+        <option value="2">2</option>
+        <option value="3">3 (it was ok)</option>
+        <option value="4">4</option>
+        <option value="5">5 (I loved it!)</option>
+      </select>
+      <div class="chosen-container chosen-container-single" style="width: 155px;" title id="m1_chosen">
+        <a class="chosen-single chosen-default">
+          <span>Select an Option</span>
+          <div>
+            <b></b>
+          </div>
+        </a>
+        <div class="chosen-drop">
+          <div class="chosen-search">
+            <input type="text" autocomplete="off">
+          </div>
+          <ul class="chosen-results"></ul>
         </div>
-
-        <div class="col-md-5 iPhone-features" style="margin-left:-25px;">
-          <ul class="top-features">
-            <li>
-              <span><i class="fa fa-random simple_bg top-features-bg"></i></span>
-              <p><strong>Redirect</strong><br>Visitors where they converts more.</p>
-            </li>
-            <li>
-              <span><i class="fa fa-cogs simple_bg top-features-bg"></i></span>
-              <p><strong>Track</strong><br>Views, Clicks and Conversions.</p>
-            </li>
-            <li>
-              <span><i class="fa fa-check simple_bg top-features-bg"></i></span>
-              <p><strong>Check</strong><br>Constantly the status of your links.</p>
-            </li>
-            <li>
-              <span><i class="fa fa-users simple_bg top-features-bg"></i></span>
-              <p><strong>Collaborate</strong><br>With Customers, Partners and Co-Workers.</p>
-            </li>
-            <a href="pricing-and-signup.html" class="btn-primary btn h2 lightBlue get-Started-btn">GET STARTED</a>
-            <h6 class="get-Started-sub-btn">FREE VERSION AVAILABLE!</h6>
-          </ul>
-        </div>
-
       </div>
 
-    </div>
-  </div>
 
-  <!-- JavaScript -->
-  <script src="http://code.jquery.com/jquery.min.js"></script>
-  <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+
+
+
+       
+   </div> 
+
+   <footer class="footer position-sticky" >
+        <div class="container">
+            <p style="background-color: yellow;">
+               <a href="/api/friends" >API Friends List</a> 
+               |
+               <a href="https://github.com/tblane88/FriendFinder" >GitHub Repo</a>
+            </p>
+        </div>
+
+    </footer>
 
 </body>
 </html>

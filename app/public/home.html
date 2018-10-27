@@ -9,12 +9,35 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
+    <style>
+        body {
+            background-image: url("http://localhost:8080/app/images/characters.jpg");
+            background-size: cover;
+            image-rendering: crisp-edges;
+            
+        };
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        };
+
+        a:link {
+            color: rgb(247, 144, 144);
+            background-color: white;
+
+        };
+
+    </style>
+
 </head>
 <body>
    <div class="container">
        <div class="jumbotron">
            <div class="text-center">
-           <img src="../images/logo.png" class="center-block" alt="logo">
+           <img src="http://localhost:8080/app/images/logo.png" class="center-block" alt="logo">
            </div>
            <h1 class="text-center">Friend Finder!</h1>
            <hr>
@@ -29,6 +52,20 @@
                 </a>
            </div>
        </div>
+
+       
    </div> 
+
+   <footer class="footer position-sticky" >
+        <div class="container">
+            <p style="background-color: yellow;">
+               <a href="/api/friends" >API Friends List</a> 
+               |
+               <a href="https://github.com/tblane88/FriendFinder" >GitHub Repo</a>
+            </p>
+        </div>
+
+    </footer>
+
 </body>
 </html>
