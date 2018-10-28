@@ -39,9 +39,10 @@
    <div class="container" style="background-color: #e9e5e5ce">
       <h2>Survey Questions</h2>
       <h5>Below are 10 movies from the Marvel Cinematic universe. Rate each movie you have seen on a scale of 1-5. </h5>
-      <h5>If you have not seen the movie give it a 0</h5>
+      <h5>If you have not seen the movie give it a 0.</h5>
       <hr>
       <h3><strong>About You</strong></h3>
+      <form>
       <h4>Name (Required)</h4>
       <input type="text" id="name" class="form-control" required>
       <h4>Link to Photo Image (Required)</h4>
@@ -52,33 +53,153 @@
       <hr>
 
       <h3><strong>Iron Man</strong></h3>
-      <h4></h4>
-      <select class="chosen-select" id="m1" style="display: none;">
-        <option value></option>
-        <option value="0">0</option>
-        <option value="1">1 (dislike)</option>
-        <option value="2">2</option>
-        <option value="3">3 (it was ok)</option>
-        <option value="4">4</option>
-        <option value="5">5 (I loved it!)</option>
-      </select>
-      <div class="chosen-container chosen-container-single" style="width: 155px;" title id="m1_chosen">
-        <a class="chosen-single chosen-default">
-          <span>Select an Option</span>
-          <div>
-            <b></b>
-          </div>
-        </a>
-        <div class="chosen-drop">
-          <div class="chosen-search">
-            <input type="text" autocomplete="off">
-          </div>
-          <ul class="chosen-results"></ul>
+      <div class="form-group">
+          <label for="movie1">Year: 2008</label>
+          <select class="form-control" id="movie1">
+            <option value="0">0</option>
+            <option value="1">1 (I didn't like it)</option>
+            <option value="2">2</option>
+            <option value="3">3 (I could take it or leave it)</option>
+            <option value="4">4</option>
+            <option value="5">5 (It was awesome)</option>
+          </select>
         </div>
-      </div>
+
+        <h3><strong>Captain America: The First Avenger</strong></h3>
+        <div class="form-group">
+            <label for="movie2">Year: 2011</label>
+            <select class="form-control" id="movie2">
+              <option value="0">0</option>
+              <option value="1">1 (I didn't like it)</option>
+              <option value="2">2</option>
+              <option value="3">3 (I could take it or leave it)</option>
+              <option value="4">4</option>
+              <option value="5">5 (It was awesome)</option>
+            </select>
+          </div>
+
+          <h3><strong>Thor</strong></h3>
+          <div class="form-group">
+              <label for="movie3">Year: 2011</label>
+              <select class="form-control" id="movie3">
+                <option value="0">0</option>
+                <option value="1">1 (I didn't like it)</option>
+                <option value="2">2</option>
+                <option value="3">3 (I could take it or leave it)</option>
+                <option value="4">4</option>
+                <option value="5">5 (It was awesome)</option>
+              </select>
+            </div>
+
+            <h3><strong>Guardians of the Galaxy</strong></h3>
+            <div class="form-group">
+                <label for="movie4">Year: 2014</label>
+                <select class="form-control" id="movie4">
+                  <option value="0">0</option>
+                  <option value="1">1 (I didn't like it)</option>
+                  <option value="2">2</option>
+                  <option value="3">3 (I could take it or leave it)</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (It was awesome)</option>
+                </select>
+              </div>
+
+              <h3><strong>Ant Man</strong></h3>
+              <div class="form-group">
+                  <label for="movie5">Year: 2015</label>
+                  <select class="form-control" id="movie5">
+                    <option value="0">0</option>
+                    <option value="1">1 (I didn't like it)</option>
+                    <option value="2">2</option>
+                    <option value="3">3 (I could take it or leave it)</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (It was awesome)</option>
+                  </select>
+                </div>
+
+                <h3><strong>Doctor Strange</strong></h3>
+                <div class="form-group">
+                    <label for="movie6">Year: 2016</label>
+                    <select class="form-control" id="movie6">
+                      <option value="0">0</option>
+                      <option value="1">1 (I didn't like it)</option>
+                      <option value="2">2</option>
+                      <option value="3">3 (I could take it or leave it)</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (It was awesome)</option>
+                    </select>
+                  </div>
+
+                  <h3><strong>The Avengers</strong></h3>
+                  <div class="form-group">
+                      <label for="movie7">Year: 2012</label>
+                      <select class="form-control" id="movie7">
+                        <option value="0">0</option>
+                        <option value="1">1 (I didn't like it)</option>
+                        <option value="2">2</option>
+                        <option value="3">3 (I could take it or leave it)</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (It was awesome)</option>
+                      </select>
+                    </div>
+
+                    <h3><strong>The Incredible Hulk</strong></h3>
+                    <div class="form-group">
+                        <label for="movie8">Year: 2008</label>
+                        <select class="form-control" id="movie8">
+                          <option value="0">0</option>
+                          <option value="1">1 (I didn't like it)</option>
+                          <option value="2">2</option>
+                          <option value="3">3 (I could take it or leave it)</option>
+                          <option value="4">4</option>
+                          <option value="5">5 (It was awesome)</option>
+                        </select>
+                      </div>
+
+                      <h3><strong>Black Panther</strong></h3>
+                      <div class="form-group">
+                          <label for="movie9">Year: 2018</label>
+                          <select class="form-control" id="movie9">
+                            <option value="0">0</option>
+                            <option value="1">1 (I didn't like it)</option>
+                            <option value="2">2</option>
+                            <option value="3">3 (I could take it or leave it)</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (It was awesome)</option>
+                          </select>
+                        </div>
+
+                        <h3><strong>Avengers: Infinity War</strong></h3>
+                        <div class="form-group">
+                            <label for="movie10">Year: 2018</label>
+                            <select class="form-control" id="movie10">
+                              <option value="0">0</option>
+                              <option value="1">1 (I didn't like it)</option>
+                              <option value="2">2</option>
+                              <option value="3">3 (I could take it or leave it)</option>
+                              <option value="4">4</option>
+                              <option value="5">5 (It was awesome)</option>
+                            </select>
+                          </div>
+
+                          <br>
+
+                          <button type="submit" class="btn btn-primary mb-2">Submit</button>
+
+                          <br>
+                          <br>
+                  
+                
+              
+            
+          
+        
+      
+    
+  
 
 
-
+      </form>
 
 
        
@@ -95,5 +216,84 @@
 
     </footer>
 
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+    
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h2 class="modal-title"><strong>Best Match</strong></h2>
+            </div>
+            <div class="modal-body">
+              <h2 id="match-name"></h2>
+              <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+
 </body>
 </html>
+
+<script type="text/javascript">
+  
+  $(".submit").on("click", function(event) {
+    event.preventDefault();
+
+    var newFriend = {
+      name: $("#name").val().trim(),
+      photo: $("#photo").val().trim(),
+      favCharacter: $("#favorite").val().trim(),
+      answerArray: [$("#movie1").val().trim(), $("#movie2").val().trim(), $("#movie3").val().trim(),
+            $("#movie4").val().trim(), $("#movie5").val().trim(), $("#movie6").val().trim(), 
+            $("#movie7").val().trim(), $("#movie8").val().trim(), $("#movie9").val().trim(), 
+            $("#movie10").val().trim(),]
+    };
+
+    console.log(newFriend);
+    compareFriends(newFriend);
+    $.post("/api/friends", newFriend, function(data) {
+
+
+    })
+
+  });
+
+function compareFriends (newFriend) {
+
+  $.ajax({url: "/api/friends", method: "GET"})
+    .then(function(friends) {
+
+      var comparison = [];
+
+      for (var i = 0; i < friends.length; i++) {
+        var total = 0;
+
+          for (var h = 0; h < friends[i].answerArray.length; h++) {
+
+
+            total += Math.abs(parseInt(friends[i].answerArray[h]) - parseInt(newFriend.answerArray[h]));
+          };
+          comparison.push(total)
+      };
+      
+
+        var lowestNum = Math.min.apply(null, comparison);
+
+        var location = comparison.indexOf(lowestNum);
+
+        $("#match-name").text(friends[location].name);
+        $("#match-img").attr("src", friends[location].photo);
+
+        $("#results-modal").modal("toggle");
+
+    });
+
+}
+
+</script>
